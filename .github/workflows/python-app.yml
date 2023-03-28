@@ -37,7 +37,8 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-  build-docker-image: runs-on: ubuntu-latest
+  build-docker-image: 
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3 
     - name: Login to registry
