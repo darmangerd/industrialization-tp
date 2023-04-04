@@ -1,5 +1,7 @@
 FROM python:3.9
 
+USER monroot
+
 WORKDIR /code
 
 COPY ./setup.py /code/setup.py
